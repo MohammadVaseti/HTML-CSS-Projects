@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{text-decoration: none;}
+html{scroll-behavior: smooth;}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0.2,0.2),#250029),url(images/pexels-chedi-tanabene-1710795.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 280px;
+    
+    
+}
+
+.banner-text h1{
+    font-size: 40px;
+    
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.banner-text span{
+    color: gold;
+}
+
+.banner-btn{
+    margin: 70px auto;
+}
+
+.banner-btn{
+    text-align: center;
+}
+
+.banner-btn a{
+    width: 15px;
+    margin: 0 10px;
+    padding: 15px;
+    color: white;
+    border: 3px solid gold;
+    position: relative;
+    z-index: 1;
+    transition: 1s;
+
+
+}
+
+
+.banner-btn a:hover{
+
+    width: 100%;
+    background-color: gold;
+    color: black;
+
+
+}
+.sidenav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0.2,0.2);
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+nav ul li a{
+    color: white;
+
+}
+
+.features{
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+.features p{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: purple;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+
+}
+.features p::after{
+    content:"";
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    left: 0%;
+    background:linear-gradient(purple,white);
+    z-index: -1;
+    border-bottom-right-radius : 35px;
+    border-top-left-radius : 35px;
+}
+
+
+.features h1{
+    font-size: 45px;
+
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.infeatures{
+
+    flex-basis: 50%;
+}
+.infeatures p{
+    text-align: justify;
+}
+.feature-img{
+    flex-basis: 40%;
+    margin: auto;
+}
+.feature-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+#service{
+    width: 100% ;
+    padding: 70px 0;
+    background: #efefef;
+}
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.overlay:hover{
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(193, 193, 220));
+
+}
+.desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+    
+
+}
+.single-service:hover .desc{
+    bottom: 50%;
+    opacity: 1;
+}
+
+.desc hr{
+    height: 2x;
+    background: white;
+    margin: 15px auto;
+
+}
+#testimonials{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 3px purple;
+    cursor: pointer;
+    transition: 2s;
+
+}
+.testimonial-col:hover{
+    transform: translateY(-10px);
+
+
+
+}
+
+
+
+.testimonial-col p{
+    text-align: center;
+    margin-top: 10px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 ;
+    
+
+}
+
+.user img{
+    width: 30px;
+    margin-right: 20px;
+    border-radius: 3px;
+
+}
+#footer{
+    padding: 60px 20px;
+    background-color: #efefef;
+}
+.footer-row{
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footr-left , .footer-right {
+    
+}
